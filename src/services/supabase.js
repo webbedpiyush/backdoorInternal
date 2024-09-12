@@ -1,7 +1,9 @@
+import SUPABASE_KEY from "../../env";
+
 import { createClient } from "@supabase/supabase-js";
 const supabaseUrl = "https://eiqmbegnmyfzojgqabrp.supabase.co";
-// eslint-disable-next-line no-undef
-const supabaseKey = process.env.SUPABASE_KEY;
+
+const supabaseKey = SUPABASE_KEY;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 export default supabase;
